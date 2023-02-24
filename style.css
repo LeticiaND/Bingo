@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    height: 80px;
+    width: 100%;
+    background: rgb(39, 42, 41);
+    display: flex;
+    justify-content: center;
+}
+.pai{
+    height: 50px;
+    width: 95px;
+}
+h1{
+    color: white;
+}
+body{
+    background-color: rgb(45, 44, 45);
+}
+.box{
+    display:flex;
+    width: 100%;
+    height: 100vh; /* altura da tela */
+    background-color: rgb(6, 5, 5);
+    
+}
+
+.child-box{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(32, 31, 31);
+    display: flex;
+    align-items: center;
+    justify-content: center;     
+}
+
+.text-box {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    justify-content: center; 
+    background-color: rgb(32, 31, 31);
+}
+
+.text-box-child {
+    width: 100%;
+    height: 100%;
+ 
+}
+
+.tabela{
+    display: grid; /*permite fazer espacamentos entre colulas e linhas*/
+    grid-template-columns: repeat(3, 10fr); /*quantas colunas*/
+    grid-template-rows: repeat(3, 10fr); /*fr significa flexivel*/
+    grid-column-gap: 0px; /*espaco entre as colunas*/
+    grid-row-gap: 00px; /*espaco entre linhas*/
+    align-items: center;
+    padding-left: 20px;
+    width: 80%;
+    height: 80%;
+    max-height: 100%;
+    background-color: rgb(32, 31, 31);
+}
+
+.child-box:nth-last-child(1) {
+    background-color: rgb(45, 44, 45);
+}
+.color {
+    background-color: rgb(45, 44, 45);
+}
+
+.celula {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+    margin-bottom: 1px;
+    border-radius: 10px;
+     background-color:rgb(45, 44, 45); 
+    border: 4px solid rgb(68, 68, 63); 
+}
+.container {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 119, 255);
+}
+.caixa-de-dentro {
+    width: 80%;
+    height: 100%;
+    background-color: rgb(32, 31, 31);
+}
+
+.caixa-de-dentro button {
+    margin-left: 80%;
+    height: 35px;
+    margin-bottom: 26px;
+    margin-top: 10px;
+    color: white;
+    
+}
+
+textarea{
+    background-color:rgb(45, 44, 45);
+    width: 100%;
+    height: 80%;
+    color: white;
+    font-size: 13pt;
+    border-radius: 10px;
+    border: 4px solid rgb(68, 68, 63);
+}
+
+.texto-final {
+    color: white;
+}
+button{
+    border: 4px solid rgb(68, 68, 63);
+    background-color:rgb(45, 44, 45) ;
+    height: 200px;
+    width: 100px;
+    border-radius: 10px;
+}
+/* 
+.celula:hover {
+    background-color: green;
+} */
